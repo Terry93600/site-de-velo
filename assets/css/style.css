@@ -228,6 +228,20 @@ article.b > figure {
   flex: 1;
   background: red;
   height: 100px;
+  border-radius: 20px;
+}
+
+.progress {
+  background: white;
+  display: block;
+  height: 5px;
+  margin: 10px;
+}
+
+.progress-bar {
+  display: block;
+  height: 5px;
+  background: var(--degraded) var(--degrade);
 }
 
 div.top {
