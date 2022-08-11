@@ -37,8 +37,4 @@ button.addEventListener("click", function(){
 
     // container.style.background = randomColor;
     header.style.background = randomColor;
-
-    let typo = document.getElementById("typo");
-
-    typo.style.fontfamilly = police;
 })

@@ -17,6 +17,53 @@ header {
   background: var(--red);
 }
 
+main > section:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5vh;
+  gap: 10px;
+}
+
+main > section:first-child > article {
+  flex: 1;
+  min-width: 270px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px black;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+section:first-child > article :is(h3,p) {
+  margin: 10px;
+}
+
+.bleu {
+  display: block;
+  background: blue;
+  width: 58px;
+  height: 53px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+main {
+  position: relative;
+}
+
+main > section:first-child > h2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+figure.velo > img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
 li {
   list-style: none;
 }
@@ -82,6 +129,14 @@ a {
 
 
 @media screen and (min-width: 768px) {
+
+  main {
+    width: 80%;
+    background: white;
+    margin: auto;
+  }
+
+
   header + section {
     background: rgb(2, 0, 36);
     background: linear-gradient(
@@ -150,6 +205,12 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+
+  main {
+    width: 100%;
+    background: yellow;
+    padding: 0 5px;
+  }
 
   body, header {
     background: yellow;
