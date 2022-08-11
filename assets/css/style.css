@@ -7,6 +7,13 @@
 :root {
   --red: rgb(122, 29, 29);
   --typo: "Montserrat", sans-serif;
+  --degraded:rgb(2, 0, 36);
+  --degrade:linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(122, 29, 29, 1) 35%,
+    rgb(18, 62, 71) 100%
+  ); 
 }
 
 header {
@@ -73,6 +80,15 @@ a {
   text-decoration: none;
 }
 
+button {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 5;
+  border-radius: 100%;
+  width: 80px;
+}
+
 .navbar {
   min-height: 70px;
   display: flex;
@@ -117,8 +133,106 @@ a {
 }
 
 
+.fa-heart {
+  color: white;
+  margin-top:  15px;
+  margin-left: 12px;
+}
 
+.fa-heart:hover {
+  color: red;
+  cursor: pointer;
+}
 
+main>section:nth-child(2) {
+  background: var(--degraded) var(--degrade);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+article.h, article.b {
+  width: 100%;
+  border: 1px solid black;
+  border: 1px solid white;
+  position: relative;
+  border-radius: 20px;
+}
+
+article.h {
+  top: 10px;
+  background: rgba(255, 255, 255, .30);
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+article.h > figure {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+article.h > a {
+  display: block;
+  text-align: center;
+  background: rgba(255, 255, 255, .8);
+  color: gray;
+  border-radius: 30px;
+  border: 1px solid white;
+  width: 150px;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+article.h > h2 {
+  margin: 10px 0;
+}
+
+article.b{
+  top: -390px;
+  background: rgba(255, 255, 255, .50);
+  min-height: 400px;
+}
+
+section.apple {
+  flex: 1;
+  min-width: 270px;
+  padding: 10px;
+}
+
+.paragraphe {
+  display: flex;
+}
+
+.paragraphe > p {
+  flex: 1;
+  text-align: center;
+}
+
+.paragraphe > p > strong {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  padding: 10px;
+}
+
+article.b {
+  display: flex;
+  padding: 20px;
+}
+
+article.b > figure {
+  flex: 1;
+  background: red;
+  height: 100px;
+}
+
+div.top {
+  flex: 1;
+}
 
 
 /* #container {
@@ -138,13 +252,7 @@ a {
 
 
   header + section {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(122, 29, 29, 1) 35%,
-      rgb(18, 62, 71) 100%
-    );
+    background: var(--degraded) var(--degrade);
     width: 100%;
     min-height: 411px;
     display: flex;

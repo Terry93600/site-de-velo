@@ -33,8 +33,10 @@ let button = document.getElementById("button");
 button.addEventListener("click", function(){
     var randomColor = colors [Math.floor(Math.random() * colors.length)]
     // let container = document.getElementById("container");
-    let header = document.getElementById("header");
+    let change = document.getElementById("change");
 
     // container.style.background = randomColor;
-    header.style.background = randomColor;
+    change.style.background = randomColor;
+
+
 })
