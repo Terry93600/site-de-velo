@@ -82,7 +82,7 @@
     </section>
 
     <main>
-      <section>
+      <!-- <section>
         <h2>Accessibles a tous niveaux</h2>
 
         <article data-aos="fade-right">
@@ -143,7 +143,7 @@
             odio nobis praesentium fuga eos!
           </p>
         </article>
-      </section>
+      </section> -->
 
 
       <section data-aos="fade-right">
@@ -199,6 +199,95 @@
         </section>
 
         <section class="apple">
+
+    <form action="contact.php" method="post">
+      <fieldset>
+        <legend>Etat Civil</legend>
+        <div class="genre">
+          <label for="femme">Femme</label>
+          <input type="radio" name="genre" id="femme" />
+
+          <label for="homme">Homme</label>
+          <input type="radio" name="genre" id="homme" />
+        </div>
+
+        <!-- <label for="nom">Votre nom</label>
+            <input type="text" name="nom" id="nom"> -->
+
+        <input
+          type="text"
+          name="nom"
+          id="nom"
+          placeholder="Votre nom"
+          required
+          aria-placeholder="Votre nom"
+        />
+        <input
+          type="text"
+          name="prenom"
+          id="prenom"
+          placeholder="Votre Prénom"
+          required
+          aria-placeholder="Votre prenom"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Vos Coordonnées</legend>
+        <input
+          type="email"
+          name="emal"
+          id="email"
+          placeholder="Votre Email"
+          aria-placeholder="Votre Email"
+          required
+          autocomplete=""
+        />
+
+        <input type="tel" name="phone" id="telephone" placeholder="Votre Téléphone" aria-placeholder="Votre téléphone"/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vos besoins</legend>
+
+        <select name="objet" id="objet">
+          <option value="#">Seclectionner</option>
+
+          <option value="rdv">Rendez-vous</option>
+          <option value="call">Téléphoner</option>
+          <option value="come">Venir</option>
+          <option value="slim">Jean Homme</option>
+        </select>
+
+        <textarea name="message" id="msg" required placeholder="Merci de nous expliquez vos besoins ..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vos Compétéences</legend>
+        <div class="genre">
+          <label for="html">HTML</label>
+          <input type="checkbox" id="html" />
+
+          <label for="css">CSS</label>
+          <input type="checkbox" id="css" />
+
+          <label for="js">JS</label>
+          <input type="checkbox" id="js" />
+        </div>
+      </fieldset>
+
+      <label for="capcha">
+          Merci de Répondre à la question 
+      </label>
+
+      <input type="text" id="capcha" placeholder="2 + 2" pattern="4" required>
+
+      <input type="submit" value="envoyer" />
+      <!-- submit: envoyer (action) -->
+    </form>
+        </section>
+
+        <!-- <section class="apple">
           <article class="h">
             <figure><img src="assets/img/profil.jpg" alt=""></figure>
             <p>151K Abonnés | 21 abonnements </p>
@@ -309,11 +398,17 @@
 
           <div class="top"></div>
           </article>
-        </section>
+        </section> -->
 
       </section>
       <section></section>
     </main>
+
+    <section id="modal">
+      <h2>Alert aux mineurs</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste laborum ipsum eligendi, modi molestias itaque quia adipisci dolorem rem voluptate impedit voluptas optio aliquid sed id est magni consequuntur.</p>
+      <a href="#">OK d'accord</a>
+    </section>
 
     <!-- <div id="container"></div> -->
 

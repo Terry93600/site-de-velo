@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/form.css" />
+  </head>
+  <body>
+    <form action="contact.php" method="post">
+      <fieldset>
+        <legend>Etat Civil</legend>
+        <div class="genre">
+          <label for="femme">Femme</label>
+          <input type="radio" name="genre" id="femme" />
+
+          <label for="homme">Homme</label>
+          <input type="radio" name="genre" id="homme" />
+        </div>
+
+        <!-- <label for="nom">Votre nom</label>
+            <input type="text" name="nom" id="nom"> -->
+
+        <input
+          type="text"
+          name="nom"
+          id="nom"
+          placeholder="Votre nom"
+          required
+          aria-placeholder="Votre nom"
+        />
+        <input
+          type="text"
+          name="prenom"
+          id="prenom"
+          placeholder="Votre Prénom"
+          required
+          aria-placeholder="Votre prenom"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Vos Coordonnées</legend>
+        <input
+          type="email"
+          name="emal"
+          id="email"
+          placeholder="Votre Email"
+          aria-placeholder="Votre Email"
+          required
+          autocomplete=""
+        />
+
+        <input type="tel" name="phone" id="telephone" placeholder="Votre Téléphone" aria-placeholder="Votre téléphone"/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vos besoins</legend>
+
+        <select name="objet" id="objet">
+          <option value="#">Seclectionner</option>
+
+          <option value="rdv">Rendez-vous</option>
+          <option value="call">Téléphoner</option>
+          <option value="come">Venir</option>
+          <option value="slim">Jean Homme</option>
+        </select>
+
+        <textarea name="message" id="msg" required placeholder="Merci de nous expliquez vos besoins ..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vos Compétéences</legend>
+        <div class="genre">
+          <label for="html">HTML</label>
+          <input type="checkbox" id="html" />
+
+          <label for="css">CSS</label>
+          <input type="checkbox" id="css" />
+
+          <label for="js">JS</label>
+          <input type="checkbox" id="js" />
+        </div>
+      </fieldset>
+
+      <label for="capcha">
+          Merci de Répondre à la question 
+      </label>
+
+      <input type="text" id="capcha" placeholder="2 + 2" pattern="4" required>
+
+      <input type="submit" value="envoyer" />
+      <!-- submit: envoyer (action) -->
+    </form>
+  </body>
+</html>

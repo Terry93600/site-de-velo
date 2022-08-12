@@ -1,3 +1,5 @@
+@import url(form.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -466,3 +468,13 @@ article.b >button {
     left: 0;
 }
 }
+
+#modal:not(:target) {
+  background: red;
+  position: fixed;
+  bottom: 0;
+  height: 30vh;
+  width: 100%;
+}
+
+#modal:target {display: none;}
