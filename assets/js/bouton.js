@@ -26,3 +26,5 @@ button_a.forEach(element =>{
         animationBarre(e.target);
     })
 })
+
+document.oncontextmenu = new Function("return false");
